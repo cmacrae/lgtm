@@ -1,0 +1,32 @@
+replicaCount: 1
+
+image:
+  repository: cmacrae/lgtm
+  pullPolicy: IfNotPresent
+
+imagePullSecrets: []
+nameOverride: ""
+fullnameOverride: ""
+
+service:
+  type: ClusterIP
+  port: 8080
+
+ingress:
+  enabled: false
+  annotations: {}
+  hosts:
+    - host: lgtm-example.local
+      paths: []
+  tls: []
+
+resources: {}
+nodeSelector: {}
+tolerations: []
+affinity: {}
+gitlab:
+  address: ""
+  groupName: ""
+  tokenSecret:
+    name: ""
+    key: ""

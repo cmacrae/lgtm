@@ -1,0 +1,4 @@
+* LGTM
+#+begin_quote
+[Looks|Let's] [good|get] [to|this] [me|merge|merged] :thumbsup:
+#+end_quote
